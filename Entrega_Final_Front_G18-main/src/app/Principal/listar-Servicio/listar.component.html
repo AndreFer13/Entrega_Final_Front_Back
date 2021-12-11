@@ -1,0 +1,21 @@
+<app-nav></app-nav>
+<div class="container mt-5 ">
+<h1>Lista de Servicios</h1>
+<table class="table table-light">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">nombre</th>
+                   <!-- <th scope="col">Acción</th>-->
+                    
+                  </tr>
+                </thead>
+                <tbody *ngFor="let stecnico of Stecnico">
+                  <tr>          
+                    <td>{{stecnico.id}}</td>
+                    <td>{{stecnico.nombre}}</td>  
+                  <!--    <td><a class="btn btn-secundary" (click)="editar(Stecnico)">Editar</a></td> -->         
+                  </tr>          
+                </tbody>
+              </table>
+            </div>

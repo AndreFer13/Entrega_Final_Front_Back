@@ -1,0 +1,23 @@
+<app-nav></app-nav>
+<div class="container mt-5 ">
+    <h1>Lista de Servicios Agendados</h1>
+    <table class="table table-light">
+        <thead>
+          <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">Usuario</th>
+            <th scope="col">Servicio</th>
+            
+          </tr>
+        </thead>
+        <tbody *ngFor="let item of Agenda">
+          <tr>
+            <td>{{item.fecha}}</td>
+            <td>{{item.usuario.nombre}}</td>
+            <td>{{item.servicio.nombre}}</td>            
+          </tr>        
+    
+        </tbody>
+      </table>
+</div>
+
